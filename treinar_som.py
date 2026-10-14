@@ -19,8 +19,8 @@ import numpy as np
 from som import SOM
 
 PASTA = os.path.dirname(os.path.abspath(__file__))
-ARQUIVO_FILMES = os.path.join(PASTA, "lista_filmes_tratada.csv")
-ARQUIVO_MODELO = os.path.join(PASTA, "som_treinado.npz")
+ARQUIVO_FILMES = os.path.join(PASTA, "lista_filmes_9k.csv")
+ARQUIVO_MODELO = os.path.join(PASTA, "m_9k.npz")
 
 
 def ler_filmes(caminho=ARQUIVO_FILMES):

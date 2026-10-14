@@ -10,6 +10,8 @@ for l in f1:
 
 idxs_comma = idxs_comma[1:]
 
+print("Etapa 1")
+
 i = -1
 result = list()
 f1.close()
@@ -24,9 +26,13 @@ for l in f2:
     # categorias = categorias.split("|")
     result.append((nome_filme, categorias))
 
+print("Etapa 2")
+
 str_to_write = ""
 for l in result:
     str_to_write += f"{l[0].replace('"', '')};{l[1]}\n"
 
-f3 = open("lista_filmes_tratada.csv", "wt", -1, "utf-8")
+print("Etapa 3")
+
+f3 = open("lista_filmes_tratada_maior.csv", "wt", -1, "utf-8")
 f3.write(str(str_to_write))

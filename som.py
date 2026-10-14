@@ -49,7 +49,7 @@ class SOM:
         self.pesos = np.zeros((self.l, dim))
         self.historico = []
 
-    # ------------------------------------------------------------------ passos
+    # ------------------------------------------------------------------ PASSOS
 
     def inicializar(self, dados):
         """Passo 1 (Inicializacao): escolhe os wj(0) aleatoriamente entre os
@@ -72,7 +72,7 @@ class SOM:
         h = self.vizinhanca(i, sigma)
         self.pesos += eta * h[:, None] * (x - self.pesos)
 
-    # ---------------------------------------------------------------- treino
+    # ---------------------------------------------------------------- TREINO
 
     def treinar(
         self,
